@@ -41,3 +41,6 @@ Capa de salida: una única neurona con activación sigmoide
 
 Resultados y métricas principales:
 
+best_val_accuracy: 1
+
+best_val_loss: 0.0021568427328020334
