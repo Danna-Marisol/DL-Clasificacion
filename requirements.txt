@@ -1,0 +1,85 @@
+Bibliotecas mínimas necesarias para correr el proyecto2:  Deep Learning-Clasificación
+=========================================================================
+Las librerias necesarias para correr el proyecto son:
+
+	pandas
+	numpy
+	ipython
+	tensorflow
+	scikit-learn
+	pyngrok
+	mlflow
+	os
+========================================================================
+Se encuentran invocados de la siguiente manera:
+
+
+
+	Para el primer notebook: Analisis_Exploratorio
+
+import pandas as pd
+import numpy as np
+from IPython.display import display
+
+
+	Para el segundo notebook: arquitectura_neuronal_y_evaluación_del_modelo
+
+import pandas as pd
+import numpy as np
+from tensorflow import keras
+from tensorflow.keras import layers
+from sklearn.preprocessing import LabelEncoder
+
+
+	Para el tercer notebook: Resultados_mlflow
+
+import os
+from pyngrok import ngrok
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder
+from tensorflow import keras
+from tensorflow.keras import layers
+import mlflow
+import mlflow.tensorflow
+
+========================================================================
+Próposito de cada librería única:
+
+
+	Manipulación y análisis de datos:
+
+pandas : Manipulación de DataFrames/tablas.
+numpy : Operaciones numéricas y arreglos eficientes.
+
+
+	Visualización en notebooks:
+
+IPython.display : Visualización clara de objetos como tablas dentro del notebook (por ejemplo, display(df.head())).
+
+
+	Preprocesamiento de datos:
+
+sklearn.preprocessing : Codificación de etiquetas categóricas (por ejemplo, LabelEncoder).
+
+
+	Modelado y redes neuronales:
+
+tensorflow / keras : Construcción, entrenamiento y evaluación de redes neuronales artificiales (ANNs).
+tensorflow.keras.layers : Definición de capas de la red como Dense, Dropout, BatchNormalization.
+
+
+	Seguimiento de experimentos:
+
+mlflow : Registro de métricas, modelos y artefactos para el seguimiento de experimentos de machine learning.
+mlflow.tensorflow : Integración específica para registrar automáticamente modelos de TensorFlow/Keras con MLflow.
+
+
+	Acceso a la interfaz de usuario en Colab:
+
+pyngrok : Exposición de servidores locales (como MLflow UI) a través de una URL pública en Colab.
+
+
+	Utilidades del sistema:
+
+os : Manejo del sistema operativo: rutas, archivos, configuración
